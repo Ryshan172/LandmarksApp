@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="za.co.abiri.abirilandmarks.Activities.Fragments.HomeBFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_b" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="za.co.abiri.abirilandmarks.Activities.Fragments.ProfileBFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile_b" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="za.co.abiri.abirilandmarks.Activities.Fragments.SettingsBFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings_b" />
+
+    <fragment
+        android:id="@+id/nav_signout"
+        android:name="za.co.abiri.abirilandmarks.Activities.ui.signout.SignOutFragment"
+        android:label="@string/menu_signout"
+        tools:layout="@layout/fragment_signout" />
+</navigation>
