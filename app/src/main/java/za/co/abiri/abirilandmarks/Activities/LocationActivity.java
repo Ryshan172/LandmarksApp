@@ -141,6 +141,7 @@ public class LocationActivity extends AppCompatActivity {
                                             latitudeTextView.getText().toString(),
                                             imageDownloadLink,
                                             currentUser.getUid(),
+                                            currentUser.getDisplayName(),
                                             currentUser.getPhotoUrl().toString());
 
                                     //ADD POST TO FIREBASE

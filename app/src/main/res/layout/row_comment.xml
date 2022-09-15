@@ -29,6 +29,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:paddingBottom="7sp"
+        android:textColor="@color/black"
         android:id="@+id/comment_content"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

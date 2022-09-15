@@ -44,6 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText userEmail,userPassword,userPassword2,userName;
     private ProgressBar loadingProgress;
     private Button regBtn;
+    private Button returnLoginBtn;
     //Firebase
     private FirebaseAuth mAuth;
 
@@ -97,6 +98,17 @@ public class RegisterActivity extends AppCompatActivity {
 
                 }
 
+            }
+        });
+
+        //Return to login page
+        returnLoginBtn = findViewById(R.id.returnloginBtn);
+        returnLoginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent loginActivity = new Intent(getApplicationContext(),LoginActivity.class);
+                startActivity(loginActivity);
+                finish();
             }
         });
 

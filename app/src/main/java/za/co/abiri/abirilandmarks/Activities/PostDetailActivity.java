@@ -133,6 +133,10 @@ public class PostDetailActivity extends AppCompatActivity {
         String postCoordinates = getIntent().getExtras().getString("coordinates");
         txtPostCoords.setText(postCoordinates);
 
+        //Username on posts
+        String postDetailName = getIntent().getExtras().getString("userName");
+        txtPostDateName.setText(postDetailName);
+
         //UserImage for comments
         Glide.with(this).load(firebaseUser.getPhotoUrl()).into(imgCurrentUser);
 

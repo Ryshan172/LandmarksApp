@@ -13,10 +13,11 @@ public class Post {
     private String userId;
     private String userPhoto;
     private Object timeStamp;
+    private String userName;
 
 
     //Constructors
-    public Post(String title, String description, String coordinates, String picture, String userId, String userPhoto) {
+    public Post(String title, String description, String coordinates, String picture, String userId, String userName, String userPhoto) {
         this.title = title;
         this.description = description;
         this.coordinates = coordinates;
@@ -24,6 +25,8 @@ public class Post {
         this.userId = userId;
         this.userPhoto = userPhoto;
         this.timeStamp = ServerValue.TIMESTAMP;
+        this.userName = userName;
+
     }
 
     public Post() {
@@ -69,7 +72,9 @@ public class Post {
         return timeStamp;
     }
 
-
+    public String getUserName() {
+        return userName;
+    }
 
     //SETTERS
     public void setTitle(String title) {
@@ -98,5 +103,9 @@ public class Post {
 
     public void setTimeStamp(Object timeStamp) {
         this.timeStamp = timeStamp;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 }

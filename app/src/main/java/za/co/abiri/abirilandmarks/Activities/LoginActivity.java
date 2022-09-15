@@ -29,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private Intent HomeActivity;
     private ImageView loginPhoto;
+    private Button goRegBtn;
 
 
     @Override
@@ -56,6 +57,19 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        //Go to registration
+        goRegBtn = findViewById(R.id.registerButton);
+        goRegBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent registerActivity = new Intent(getApplicationContext(),RegisterActivity.class);
+                startActivity(registerActivity);
+                finish();
+            }
+        });
+
+
 
         loginProgress.setVisibility(View.INVISIBLE);
 
