@@ -109,6 +109,7 @@
         <EditText
             android:background="@drawable/edittext_button_styleround"
             android:hint="Add comment"
+            android:textColorHint="@color/black"
             android:id="@+id/post_detail_comment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -127,6 +128,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:text="Add"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/post_detail_comment"
             app:layout_constraintTop_toTopOf="@+id/post_detail_comment" />

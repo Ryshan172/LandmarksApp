@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Activities.LoginActivity"
-        android:background="@color/white">
+        android:background="@drawable/backgroundb">
 
         <ImageView
             android:id="@+id/login_photo"
@@ -42,11 +42,15 @@
             android:hint="Email"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
+            android:textColor="@color/black"
             android:id="@+id/login_password"
             android:layout_width="256dp"
             android:layout_height="wrap_content"
@@ -54,6 +58,7 @@
             android:background="@drawable/reg_edittext_style"
             android:ems="10"
             android:hint="Password"
+            android:textColorHint="@color/black"
             android:inputType="textPassword"
             android:minHeight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -64,14 +69,14 @@
             android:id="@+id/loginButton"
             android:layout_width="136dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/reg_btn_style"
             android:text="Login"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login_password" />
+            app:layout_constraintTop_toBottomOf="@+id/graphic_view" />
 
         <ProgressBar
             android:id="@+id/login_progress"
@@ -85,14 +90,17 @@
             app:layout_constraintTop_toTopOf="@+id/loginButton"
             app:layout_constraintVertical_bias="0.0" />
 
+        <!-- By Abiri Innovations
+        -->
+
         <TextView
             android:id="@+id/apptitle1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="28dp"
             android:text="By Abiri Innovations"
-            android:textColor="@color/black"
-            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
             android:textStyle="italic"
             app:layout_constraintBottom_toTopOf="@+id/login_email"
             app:layout_constraintEnd_toEndOf="parent"
@@ -104,6 +112,7 @@
             android:layout_width="136dp"
             android:layout_height="wrap_content"
             android:text="Registration"
+            android:textColor="@color/white"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -111,6 +120,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginButton"
             app:layout_constraintVertical_bias="0.183" />
+
+        <ImageView
+            android:id="@+id/graphic_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_password"
+            app:srcCompat="@drawable/maindesign" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

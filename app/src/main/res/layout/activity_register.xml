@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Activities.RegisterActivity"
-        android:background="#ffffff">
+        android:background="@drawable/backgroundb">
 
 
         <ImageView
@@ -24,6 +24,8 @@
             app:srcCompat="@drawable/userphoto" />
 
         <EditText
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:id="@+id/regName"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
@@ -41,11 +43,14 @@
             android:id="@+id/regPassword2"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:background="@drawable/reg_edittext_style"
             android:ems="10"
             android:hint="Confirm password"
             android:inputType="textPassword"
             android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/regPassword" />
@@ -58,6 +63,8 @@
             app:layout_constraintGuide_begin="359dp" />
 
         <EditText
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:id="@+id/regPassword"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
@@ -71,6 +78,8 @@
             app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
         <EditText
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:id="@+id/regMail"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
@@ -110,6 +119,7 @@
             app:layout_constraintTop_toTopOf="@+id/regBtn" />
 
         <Button
+            android:textColor="@color/white"
             android:id="@+id/returnloginBtn"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
@@ -129,8 +139,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Photo is required"
-            android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/regName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"

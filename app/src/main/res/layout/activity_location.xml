@@ -69,14 +69,22 @@
             android:background="@drawable/popup_edittext_style"
             android:ems="10"
             android:hint="Title"
+            android:textColorHint="@color/black"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toStartOf="@+id/popup_user_image"
             app:layout_constraintHorizontal_bias="0.483"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- android:hint="Title"
+        -->
+
+        <!-- android:hint="Birth Date, Death Date, Burial Date, Description of deceased "
+        -->
+
         <EditText
-            android:hint="Birth Date, Death Date, Burial Date, Description of deceased "
+            android:textColorHint="@color/black"
+            android:hint="Birth Date, Death Date, Burial Date, Description of deceased"
             android:id="@+id/popup_description1"
             android:layout_width="361dp"
             android:layout_height="wrap_content"
@@ -90,6 +98,7 @@
             app:layout_constraintTop_toBottomOf="@+id/popup_title1" />
 
         <EditText
+            android:textColorHint="@color/black"
             android:hint="Coordinates"
             android:background="@drawable/popup_edittext_style"
             android:id="@+id/popup_coords1"
@@ -104,6 +113,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
+            android:textColor="@color/white"
             android:id="@+id/backBtn1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

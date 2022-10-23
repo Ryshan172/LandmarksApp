@@ -140,7 +140,7 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             //User account successfully created
-                            showMessage("Account created");
+                            showMessage("Registration complete");
 
                             //Updated profile picture and name after creating account
                             //Created Method at bottom of code
@@ -188,7 +188,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                                         if (task.isSuccessful()) {
                                             //Successfully updated user info
-                                            showMessage("Registration complete");
+                                            //showMessage("Registration complete");
                                             //Method
                                             updateUI();
                                         }
@@ -205,6 +205,7 @@ public class RegisterActivity extends AppCompatActivity {
     //updateUI created Method
     private void updateUI() {
         //Moves to HomeActivity
+        //Toast
         Intent homeActivity = new Intent(getApplicationContext(), Home.class);
         startActivity(homeActivity);
         finish();
